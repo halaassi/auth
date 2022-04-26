@@ -1,0 +1,22 @@
+<h2>Edit your profile</h2>
+<form action="/users" method="POST">
+  <div class="form-group">
+    <label for="first">First Name:</label>
+    <input type="text" class="form-control" name="first" id="first" value="{{ first }}">
+  </div>
+  <div class="form-group">
+    <label for="last">Last Name:</label>
+    <input type="text" class="form-control" name="last" id="last" value="{{ last }}">
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="text" class="form-control" name="email" id="email" value="{{ email }}">
+  </div>
+  {{!-- <div class="form-group">
+    <label for="name">Facebook:</label>
+    <input type="text" class="form-control" name="facebook" id="facebook" value="{{ facebook }}">
+  </div> --}}
+  <button class="btn btn-primary">Update</button>
+</form>
+
+<p><a href="/users/{{email}}" target="_blank">View your profile</a></p>
